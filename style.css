@@ -1,0 +1,184 @@
+*{
+    font-family: 'Courier New';
+}
+
+body{
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+#ul-image{
+    flex-grow: 1;
+}
+
+#ul-links{
+    flex-grow: 10;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ul-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+#ul-links li a:hover{
+    color: lightsalmon;
+}
+
+#logo{
+    width: 100%;
+    border-radius: 45px;
+}
+
+#logo-div{
+    width: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.content-div{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+main{
+    
+}
+
+section{
+ 
+}
+
+.articles{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.articles div{
+    padding: 3px 10px;
+}
+
+#article-linux{
+    display: flex;
+    justify-content: center;
+
+}
+
+#article-linux div{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#article-linux img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+footer div{
+    width: 70%;
+    text-align: center;
+    color: white;
+}
+
+table{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td{
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+#table-header{
+    color: lightsalmon;
+    text-align: center;
+}
+
+.h2-header{
+    color: lightsalmon;
+    text-align: center;
+}
+
+
+
+
+/* About us */
+#aboutUs{
+    display: flex;
+}
+
+.bg-image-home{
+    background-image: url("images/oil1.webp");
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-size: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+
+/* x styles */
+.bg-image-x{
+    background-image: url("images/oil5.jpg");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+
+.brief-desc{
+    padding: 70px 50px;
+    display: flex;
+}
+
+.brief-desc-div{
+    flex-basis: 1;
+    color: white;
+}
+
+.brief-desc-div-right{
+    padding: 20px;
+    border: 1px solid white;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    border-radius: 10px;
+}
+
+.brief-desc-div-right p{
+    margin: 20px 0px;
+    font-family: Cambria;
+}
