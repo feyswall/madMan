@@ -7,6 +7,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <style>
+        div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -28,7 +76,152 @@
                 <h1 class="logo">Navbar</h1>
             </div>
         </nav>
-
     </header>
+
+   <main id="main">
+        <section>
+           <div style="text-align: center; margin-bottom: 20px;">
+                <h2>Responsive Image Gallery</h2>
+                <h4>Resize the browser window to see the effect.</h4>
+           </div>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/oil1.webp">
+                  <img src="images/oil1.webp" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
+            
+            
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/oil2.jpg">
+                  <img src="images/oil3.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
+            
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="">
+                  <img src="images/oil3.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
+            
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="">
+                  <img src="images/oil4.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
+
+                
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="">
+                    <img src="images/oil5.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+              </div>
+
+                  
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="">
+                    <img src="images/oil6.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+              </div>
+
+                  
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="">
+                    <img src="images/oil7.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+              </div>
+
+                  
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="">
+                    <img src="images/oil8.webp" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+              </div>
+
+                  
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="">
+                    <img src="images/oil2.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+              </div>
+
+                  
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="">
+                    <img src="images/oil4.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+              </div>
+            
+            <div class="clearfix"></div>
+
+        </section>
+   </main>
+
+   <footer class="footer">
+    <div class="footer-container">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, hic culpa rem sunt consectetur ratione excepturi quaerat.</p>
+    </div>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Our Team</h3>
+        <ul>
+          <li><a href="#">Our Policy</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Engeneers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Social Medias</h3>
+        <ul>
+          <li><a href="#">Whatsapp link</a></li>
+          <li><a href="#">Youtube Channle</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Web Pages</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contactg Us</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-container">
+        <p style="text-align: center;">&copy;copyright All Rights Reserved</p>
+    </div>
+
+</footer>
 </body>
 </html>

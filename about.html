@@ -7,6 +7,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <style>
+        *, *:before, *:after {
+        box-sizing: inherit;
+        }
+        .row{
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .row{
+                flex-direction: column;
+            }
+            
+        .container {
+            padding: 0px 0px;
+            }
+        }
+        .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        }
+
+        .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+        }
+
+        .container {
+        padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .title {
+        color: grey;
+        }
+
+        .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        }
+
+        .button:hover {
+        background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,7 +94,116 @@
                 <h1 class="logo">Navbar</h1>
             </div>
         </nav>
-
     </header>
+
+
+
+    <main id="main">
+        <section>
+            <div class="about-section">
+                <h1>About Us Page</h1>
+                <p>Some text about who we are and what we do.</p>
+                <p>Resize the browser window to see that this page is responsive by the way.</p>
+              </div>
+              
+              <h2 style="text-align:center; margin-top: 20px; font-size: 1.7em;">Our Team</h2>
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="images/user.png" alt="Jane" style="width:100%">
+                    <div class="container">
+                      <h2>Jane Doe</h2>
+                      <p class="title">CEO & Founder</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>jane@example.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <div style="padding: 20px;">
+                        <img src="images/user.png" alt="Mike" style="width:100%">
+                      </div>
+                    <div class="container">
+                      <h2>Mike Ross</h2>
+                      <p class="title">Art Director</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>mike@example.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <div style="padding: 20px;">
+                        <img src="images/user.png" alt="Mike" style="width:100%">
+                      </div>
+                      <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mike@example.com</p>
+                        <p><button class="button">Contact</button></p>
+                      </div>
+                    </div>
+                  </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="images/user.png" alt="John" style="width:100%">
+                    <div class="container">
+                      <h2>John Doe</h2>
+                      <p class="title">Designer</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>john@example.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, hic culpa rem sunt consectetur ratione excepturi quaerat.</p>
+        </div>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Our Team</h3>
+            <ul>
+              <li><a href="#">Our Policy</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Engeneers</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Social Medias</h3>
+            <ul>
+              <li><a href="#">Whatsapp link</a></li>
+              <li><a href="#">Youtube Channle</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Web Pages</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contactg Us</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-container">
+            <p style="text-align: center;">&copy;copyright All Rights Reserved</p>
+        </div>
+
+    </footer>
+      
 </body>
 </html>
